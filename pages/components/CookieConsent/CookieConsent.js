@@ -38,14 +38,14 @@ export default function CookieConsent() {
                 <div className={isDetailOpen ? styles.cookieDetailOpen : styles.cookieDetailClosed}>
                     <div className={styles.cookieCheckbox}>
                         <p>Funktionale Cookies</p>
-                        <label for="functional" className={styles.switch}>
+                        <label htmlFor="functional" className={styles.switch}>
                             <input onChange={() => setFunctionalChecked(true)} checked={functionalChecked} type={'checkbox'} name="functional" id="functionalCookies" />
                             <div className={styles.roundSlider}></div>
                         </label>
                     </div>
                     <div className={styles.cookieCheckbox}>
                         <p>Analytische Cookies</p>
-                        <label for="analytical" className={styles.switch}>
+                        <label htmlFor="analytical" className={styles.switch}>
                             <div>
                                 <input onChange={() => setAnalyticalChecked(!analyticalChecked)} checked={analyticalChecked} type={'checkbox'} name="analytical" id="analyticalCookies" />
                                 <div className={styles.roundSlider}></div>
@@ -54,7 +54,7 @@ export default function CookieConsent() {
                     </div>
                     <div className={styles.cookieCheckbox}>
                         <p>Marketing Cookies</p>
-                        <label for="marketing" className={styles.switch}>
+                        <label htmlFor="marketing" className={styles.switch}>
                             <input onChange={() => setMarketingChecked(!marketingChecked)} checked={marketingChecked} type={'checkbox'} name="marketing" id="marketingCookies" />
                             <div className={styles.roundSlider}></div>
                         </label>
