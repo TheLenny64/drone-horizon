@@ -1,0 +1,53 @@
+.contactForm {
+    background-color: #282C2D;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 12px 100px 12px;
+}
+
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.contactForm input {
+    font-size: 18px;
+    padding: 5px;
+    min-width: 200px;
+    min-height: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+}
+
+.contactForm input:focus {
+    border: 1px solid var(--primary);
+}
+
+.inputUnit {
+    display: flex;
+    flex-direction: column;
+}
+
+.messageBox {
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    color: black;
+}
+
+.messageBox:focus {
+    border: 1px solid var(--primary);
+}
+
+.title {
+    font-size: 4rem;
+}

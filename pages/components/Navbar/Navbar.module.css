@@ -1,0 +1,183 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.brandName {
+    padding-right: 50px;
+    color: white;
+}
+
+.navMenu ul,
+.navMenuOpen ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navMenu ul li,
+.navMenuOpen ul li {
+    padding: 10px 16px 10px 16px;
+    color: white;
+    list-style: none;
+    border-radius: 20px;
+    transition: 0.15s ease-out;
+}
+
+.navMenu ul li:hover,
+.navMenuOpen ul li:hover {
+    background-color: white;
+    cursor: pointer;
+    text-shadow: none;
+    color: var(--primary);
+    transition: 0.15s ease-out;
+}
+
+.burgerIcon,
+.burgerIconOpen {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .navbar {
+        backdrop-filter: none;
+        justify-content: space-between;
+    }
+
+    .brandName {
+        padding-left: 10px;
+    }
+
+    .navMenu {
+        top: 70px;
+        position: absolute;
+        right: -200%;
+        width: 100vw;
+        height: 100vh;
+        transition: 0.3s ease-out;
+    }
+
+    .navMenuOpen {
+        padding-top: 80px;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(20px);
+        transition: 0.3s ease-out;
+    }
+
+    .navMenuOpen ul {
+        padding-inline-start: 0px;
+        gap: 35px;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenuOpen ul li {
+        border-radius: 0px;
+        font-size: 22px;
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+
+    .burgerIcon,
+    .burgerIconOpen {
+        z-index: 999;
+        display: block;
+        width: 40px;
+        height: 45px;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        color: black;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .burgerIcon span,
+    .burgerIconOpen span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .burgerIcon span:nth-child(1) {
+        top: 0px;
+    }
+
+    .burgerIcon span:nth-child(2),
+    .burgerIcon span:nth-child(3) {
+        top: 14px;
+    }
+
+    .burgerIcon span:nth-child(4) {
+        top: 28px;
+    }
+
+    .burgerIconOpen span:nth-child(1) {
+        top: 14px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .burgerIconOpen span:nth-child(2) {
+        top: 14px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .burgerIconOpen span:nth-child(3) {
+        top: 14px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .burgerIconOpen span:nth-child(4) {
+        top: 14px;
+        width: 0%;
+        left: 50%;
+    }
+}

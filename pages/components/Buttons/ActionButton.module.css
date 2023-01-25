@@ -1,0 +1,75 @@
+.btnAction {
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, var(--primary1) 35%, var(--primary) 100%);
+    box-shadow: 0px 2px 10px var(--primary);
+    transition: 0.4s ease-out;
+}
+
+.btnAction:hover {
+    cursor: pointer;
+    color: var(--primary1);
+    background: white;
+    box-shadow: 0px 2px 10px var(--primary);
+    transition: 0.3s ease-in;
+}
+
+.btnDark {
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    background: black;
+    box-shadow: 0px 5px 10px var(--primary);
+    transition: 0.2s ease-out;
+}
+
+.btnDark:hover {
+    cursor: pointer;
+    color: black;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(65, 65, 65, 0.623);
+    transition: 0.2s ease-in;
+}
+
+.btnOutlinedDark {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    transition: 0.2s ease-out;
+}
+
+.btnOutlinedDark:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+    transition: 0.2s ease-in;
+}
+
+.btnOutlinedAction {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    transition: 0.3s ease-out;
+}
+
+.btnOutlinedAction:hover {
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, var(--primary1) 35%, var(--primary) 100%);
+    transition: 0.2s ease-in;
+}
+
+.buttonWrapper {
+    height: 50px;
+}
