@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Showcase1 from "../public/drone_showcase_1.png"
 import Showcase2 from "../public/drone_showcase_2.png"
 import ShowcaseCard from "./components/UI/ShowcaseCard";
-import { FaCheck, FaUser, FaUserCheck } from "react-icons/fa";
+import { FaCheck, FaHandshake, FaUser, FaUserCheck } from "react-icons/fa";
 import ActionButton from "./components/Buttons/ActionButton";
 import Link from "next/link";
 
@@ -75,7 +75,26 @@ export default function Product() {
                     <div style={{ paddingTop: "15px" }}>
                         <Link href="/contact"><ActionButton style={"outlinedAction"}>Kontakt aufnehmen</ActionButton></Link>
                     </div>
-
+                    <div className={styles.showcaseRow}>
+                        <div className={styles.isolatedShowcase}>
+                            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "165px" }}>
+                                <h3 style={{ textAlign: "center", paddingBottom: "10px" }}>ISO:9001<br /> zertifiziert</h3>
+                                <FaCheck size={80} color="var(--primary)" />
+                            </div>
+                        </div>
+                        <div className={styles.isolatedShowcase}>
+                            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "165px" }}>
+                                <h3 style={{ textAlign: "center", paddingBottom: "10px" }}>Kundenzufriedenheit: <br /> 1,65</h3>
+                                <FaUser size={80} color="var(--primary)" />
+                            </div>
+                        </div>
+                        <div className={styles.isolatedShowcase}>
+                            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "165px" }}>
+                                <h3 style={{ textAlign: "center", paddingBottom: "10px" }}>5+ Jahre Erfahrung</h3>
+                                <FaHandshake size={80} color="var(--primary)" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
