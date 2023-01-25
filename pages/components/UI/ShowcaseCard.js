@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './ShowcaseCard.module.css';
+import styles from './ShowcaseCard.module.css'
 
 export default function ShowcaseCard({ title, text, image, inverse, quoteName, hideImageContainer, specificImageSize, children }) {
     return (
