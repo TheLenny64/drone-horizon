@@ -4,12 +4,12 @@ import react, { useRef } from 'react';
 import { useEffect } from 'react';
 import styles from '../../styles/Home.module.css'
 import ShowcaseCard from './UI/ShowcaseCard';
-import DroneHorizonLogo from "../../public/drone_horizon_logo.png";
 import Image from 'next/image';
 
+import DroneHorizonLogo from "../../public/drone_horizon_logo.png";
 import LandingPagePic1 from "../../public/drone_landingpage.jpg";
 import LandingPagePic2 from "../../public/drone_landingpage_2.jpg";
-import Saubeidl from "../../public/el_saubeidl.png"
+import CEO from "../../public/el_ceo.png"
 
 export default function Home2() {
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function Home2() {
         <div className={styles.main}>
             <div className={styles.homeVideo}>
                 <video
-                    src="/drohnenshot_landingpage.mp4"
+                    src="/com_drohnenshot_landingpage.mp4"
                     autoPlay
                     loop
                     muted>
@@ -55,7 +55,7 @@ export default function Home2() {
                 <ShowcaseCard
                     quoteName={"CEO - Leonard Bartl"}
                     text={'"Drone Horizon ist ein Produktionsunternehmen, das Drohnen auf innovative Art und Weise anbietet. Mit Hilfe von ausgeklügelten Systemen können Bestellungen und andere Waren scheinbar mühelos ausgeliefert werden. Der gesamte Prozess wird nicht nur beschleunigt und vereinfacht, sondern die Lieferung im Allgemeinen wird simpler gestaltet. Der Schwerpunkt liegt zunächst auf dem B2G-Markt und der Lieferung von Gesundheitsartikeln."'}
-                    image={Saubeidl}
+                    image={CEO}
                 />
             </div>
         </div>

@@ -1,10 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Home2 from '../pages/components/Home'
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
-import ContactForm from './components/ContactForm/ContactForm'
 import CookieConsent from './components/CookieConsent/CookieConsent'
 
 

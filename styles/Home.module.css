@@ -176,6 +176,9 @@
 }
 
 @media (max-width: 1024px) {
+  .isolatedShowcase{
+    max-width: 90vw;
+  }
   .videoTitle {
     left: 30vw;
   }
@@ -197,7 +200,7 @@
 
 @media (max-width: 600px) {
   .videoTitle {
-    left: 20vw;
+    left: 5vw;
   }
 
   .grid {

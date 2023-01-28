@@ -51,3 +51,9 @@
 .title {
     font-size: 4rem;
 }
+
+@media (max-width: 700px){
+    .messageBox{
+        width: 350px;
+    }
+}
