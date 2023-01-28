@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import AboutHeaderImage from "../public/banner_aboutus.jpg"
 import ShowcaseCard from './components/UI/ShowcaseCard';
 
-import TeamPicture from "../public/team_picture.jpg";
+import TeamPicture from "../public/team_drone_horizon.png";
 import Pin from "../public/pin.png"
 
 export default function about() {
@@ -11,6 +11,7 @@ export default function about() {
         <div className={styles.main}>
             <div style={{ position: "relative", maxHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 <Image
+                    alt='drone horizon about'
                     src={AboutHeaderImage}
                     style={{ position: "absolute", top: 0, left: 0, filter: "brightness(50%)", maxHeight: "100vh" }}
                 />
@@ -29,6 +30,7 @@ export default function about() {
                 />
                 <div style={{ marginTop: "60px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                     <Image
+                        alt='drone horizon team'
                         style={{ borderRadius: "25px" }}
                         src={TeamPicture}
                         width={620}

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 import '../styles/globals.css'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
