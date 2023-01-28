@@ -12,6 +12,7 @@ export default function about() {
             <div style={{ position: "relative", maxHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                 <Image
                     alt='drone horizon about'
+                    priority={true}
                     src={AboutHeaderImage}
                     style={{ position: "absolute", top: 0, left: 0, filter: "brightness(50%)", maxHeight: "100vh" }}
                 />
